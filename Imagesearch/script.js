@@ -1,6 +1,5 @@
 const search = document.querySelector(".search-box input"),
   images = document.querySelectorAll(".image-box");
-
 search.addEventListener("keyup", (e) => {
   if (e.key == "Enter") {
     let searcValue = search.value,
@@ -14,10 +13,8 @@ search.addEventListener("keyup", (e) => {
     });
   }
 });
-
 search.addEventListener("keyup", () => {
   if (search.value != "") return;
-
   images.forEach((image) => {
     image.style.display = "block";
   });
